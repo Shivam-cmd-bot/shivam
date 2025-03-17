@@ -3,13 +3,12 @@ name : great
 jobs : 
    build :
      runs-on : hi
-     strategy :
-       matrix :
-         hi : [ 14,16 ]
+     services :
+       thik :
+         image : we
      steps :
        - uses : action/setup-node@v4
-         with :
-          node-version : ${{ matrix.node }}
+         
        
 
    
