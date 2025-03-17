@@ -1,0 +1,13 @@
+on : push
+name : great
+jobs :
+   build :
+    runs-on : hi
+    steps :
+     - run : ls
+
+   dev :
+     needs : build
+     runs-on : hii
+     steps :
+        - run : ls
