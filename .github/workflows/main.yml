@@ -7,7 +7,7 @@ jobs :
          - name : great
            env :
              hii : ${{secrets.we}}
-           run : ls $hii
+           run :  $hii
          
        
 
