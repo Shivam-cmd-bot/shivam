@@ -1,13 +1,12 @@
 on : push
 name : great
-jobs :
+jobs : 
    build :
-    runs-on : hi
-    steps :
-     - run : ls
-
-   dev :
-     needs : build
-     runs-on : hii
+     runs-on : hi
+     strategy :
+       matrix :
+         hi : [ 14,16 ]
      steps :
-        - run : ls
+       - run : hi
+
+   
