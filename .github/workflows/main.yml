@@ -1,13 +1,15 @@
 on : push
-name : great
 jobs : 
    build :
      runs-on : hi
-     steps :
-         - name : hi
-           env :
-             hii : ${{secrets.we}}
-           run :  ls
+     strategy :
+      matrix:
+       node : [14,16]
+       python : [15,17]
+     steps  :
+         - run : ${{matrix.hii}}
+         - run : $((matrix.python}}
+   
          
        
 
