@@ -5,9 +5,9 @@ jobs :
      runs-on : hi
      steps :
          - name : great
-           we :
+           env :
              hii : ${{secrets.we}}
-           run :  $hii
+           run :  ls
          
        
 
