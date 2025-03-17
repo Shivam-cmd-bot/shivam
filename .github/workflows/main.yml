@@ -8,7 +8,7 @@ jobs :
        python : [15,17]
      steps  :
          - run : ${{matrix.hii}}
-         - run : $((matrix.python}}
+         - run : $((matrix.we}}
    
          
        
