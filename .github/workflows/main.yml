@@ -3,11 +3,11 @@ name : great
 jobs : 
    build :
      runs-on : hi
-     services :
-       thik :
-         image : we
      steps :
-       - uses : action/setup-node@v4
+         - name : great
+           env :
+             hii : ${{secrets.we}}
+           run : ls $hii
          
        
 
